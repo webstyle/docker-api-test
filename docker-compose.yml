@@ -2,8 +2,7 @@ version: '3.4'
 
 services:
   docker-api-test:
-    image: docker-api-test
-    build: .
+    image: webstyle/docker-api-test
     environment:
       NODE_ENV: production
       PORT: 80
