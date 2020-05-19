@@ -6,7 +6,7 @@ services:
     environment:
       NODE_ENV: production
       PORT: 80
-    depoloy:
+    deploy:
       replicas: 20
     ports:
       - 1333:80
