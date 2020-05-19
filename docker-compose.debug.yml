@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  docker-api-test:
+    image: docker-api-test
+    build: .
+    environment:
+      NODE_ENV: development
+    ports:
+      - 80
+      - 9229:9229
+    ## set your startup file here
+    command: node --inspect=0.0.0.0:9229 index.js
